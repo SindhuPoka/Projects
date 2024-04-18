@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations Example</title>
+        <style>
+            .box
+            {
+               width: 200px;
+               height: 200px;
+               background-color: chocolate;
+               animation-name: test;
+               animation-duration: 3s;
+               animation-delay: 3s;
+               animation-iteration-count: 4;
+               animation-direction:alternate;
+               animation-fill-mode: forwards;
+               animation-timing-function:linear;
+               animation-play-state: running;
+            }
+            .box2
+            {
+                margin-top:20px;
+                animation-timing-function: ease-in;
+            }
+            @keyframes test
+            {
+                from{
+                    width:100px;
+                    height: 100px;
+                    background-color: red;
+                }
+              to{
+                 background-color: blueviolet;
+                 transform: translateX(200px);
+                 border-radius:50%;
+              }
+            }
+        </style>
+    </head>
+    <body><div class="box"></div><div class="box box2"></div>
+    </body>
+</html>
