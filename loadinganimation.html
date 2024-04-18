@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations Example</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: darkgrey;
+            }
+            .container{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+            }
+            .loader-1{
+                display: flex;
+                flex-wrap: wrap;
+                width:300px;
+                justify-content: center;
+            }
+            .dot{
+                background-color:rgb(18, 75, 180);
+                opacity:0.6;
+                width:26px;
+                height:26px;
+                border-radius:50px;
+                margin:25px;
+            }
+            .dot:nth-child(1){
+                animation: animateloader1 0.6s infinite;
+            }
+            .dot:nth-child(2){
+                animation: animateloader1 0.6s infinite;
+            }
+            .dot:nth-child(3){
+                animation: animateloader1 0.6s infinite;
+            }
+            .dot:nth-child(4){
+                animation: animateloader1 0.4s infinite;
+            }
+            .dot:nth-child(5){
+                animation: animateloader1 0.7s infinite;
+            }
+            .dot:nth-child(6){
+                animation: animateloader1 0.3s infinite;
+            }
+            .dot:nth-child(7){
+                animation: animateloader1 0.5s infinite;
+            }
+            .dot:nth-child(8){
+                animation: animateloader1 0.6s infinite;
+            }
+            .dot:nth-child(9){
+                animation: animateloader1 0.4s infinite;
+            }
+
+            @keyframes animateloader1 {
+                0%{
+                    transform: scale(1);
+                    opacity:0.6;
+                }
+                50%
+                {
+                    transform:scale(1.5);
+                    opacity:1;
+                }
+                100%{
+                    transform:scale(1);
+                    opacity: 0.6;
+                }
+            }
+
+            .loader-2{
+                 width:400px;
+                 display: flex;
+                 justify-content: space-evenly;
+                 align-items: center;
+            }
+            .line{
+                width:12px;
+                height: 100px;
+                background-color: red;
+                border-radius: 12px;
+            }
+            .line:nth-child(1){
+                animation: animateloader2 0.7s 0.6s infinite;
+            }
+            .line:nth-child(2){
+                animation: animateloader2 0.7s 0.3s infinite;
+            }
+            .line:nth-child(3){
+                animation: animateloader2 0.7s infinite;
+            }
+            .line:nth-child(4){
+                animation: animateloader2 0.7s 0.3s infinite;
+            }
+            .line:nth-child(5){
+                animation: animateloader2 0.7s 0.5s infinite;
+            }
+            
+            @keyframes animateloader2{
+                0%{
+                    transform:scale(1);
+                }
+                50%
+                {
+                    transform:scale(1.5);
+                }
+                100%{
+                    transform:scale(1);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="loader-1">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="loader-2">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </body>
+</html>
