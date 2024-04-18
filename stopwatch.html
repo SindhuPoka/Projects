@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StopWatch using Java Script</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container{
+                background:linear-gradient(to left, rgb(36, 36, 189),blue,rgb(162, 162, 248));
+                width: 40%;
+                border-radius: 10px;
+                padding:60px 0;
+            }
+            #stopwatch{
+                  color: white;
+                  width:90%;
+                  padding:30px 0;
+                  font-size: 20px;
+                  background: rgb(7, 6, 6);
+                  text-align: center;
+                  position: relative;
+                  left:50%;
+                  transform: translateX(-50%);
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  border-radius: 5px;
+                  box-shadow: 0 0 20px rgb(53, 44, 44);
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 60px;
+            }
+            .buttons button{
+                background-color: aliceblue;
+                padding: 10px 25px;
+                color:black;
+                cursor:pointer;
+                border:none;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="stopwatch">
+                00 : 00 : 00 : 000
+            </div>
+            <div class="buttons">
+                <button id="start">start</button>
+                <button id="pause">pause</button>
+                <button id="reset">reset</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
